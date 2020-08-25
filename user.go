@@ -30,7 +30,7 @@ type UserModifyRequest struct {
 	UserCaps    []UserCap `url:"user-caps,omitempty,semicolon" validate:"omitempty,dive"`
 	GenerateKey bool      `url:"generate-key,omitempty"` // This defaults to false, preserving that behavior
 	MaxBuckets  int       `url:"max-buckets,omitempty"`
-	Suspended   bool      `url:"suspended,omitempty"`
+	Suspended   string      `url:"suspended,omitempty"`
 }
 
 type userInfoRequest struct {
