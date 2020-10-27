@@ -10,10 +10,10 @@ import (
 type RadosTime time.Time
 
 // RadosTimeFormat - this is the most common rados time format
-const RadosTimeFormat string = "2006-01-02 15:04:05.000000Z07:00"
+const RadosTimeFormat string = "2006-01-02T15:04:05.000000Z07:00"
 
 // RadosBucketTimeFormat - used for bucket calls
-const RadosBucketTimeFormat string = "2006-01-02 15:04:05.000000"
+const RadosBucketTimeFormat string = "2006-01-02T15:04:05.000000Z"
 
 // UnmarshalText - implements TextUnmarshaler
 func (rt *RadosTime) UnmarshalText(text []byte) error {
